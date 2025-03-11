@@ -44,6 +44,8 @@ if ($result && isset($result['guid']['raw'])) {
 
     $postResult = curl_exec($ch);
     curl_close($ch);
-    echo $postResult
-
-
+    echo $postResult;
+} else {
+    echo "Failed to create post.";
+}
+?>
